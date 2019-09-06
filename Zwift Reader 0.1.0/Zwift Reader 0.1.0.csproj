@@ -59,9 +59,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Altitude.cs" />
-    <Compile Include="CP.xaml.cs">
-      <DependentUpon>CP.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Detailed.xaml.cs">
       <DependentUpon>Detailed.xaml</DependentUpon>
     </Compile>
@@ -73,10 +70,6 @@
     </Compile>
     <Compile Include="Speed.cs" />
     <Compile Include="Time.cs" />
-    <Page Include="CP.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Detailed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

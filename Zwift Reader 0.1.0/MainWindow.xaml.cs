@@ -59,11 +59,12 @@ namespace Zwift_Reader_0._1._0
         {
             Frame.Content = new Detailed();
         }
-
+        /*
         private void Open_CP(object sender, RoutedEventArgs e)
         {
             Frame.Content = new CP();
         }
+        */
         //see frame .xaml.cs pages for indiviudal page calls/functions
     }
 }

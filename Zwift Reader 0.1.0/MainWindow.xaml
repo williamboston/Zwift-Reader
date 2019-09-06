@@ -58,7 +58,7 @@
                 BorderBrush="White" 
                 Foreground="White"
                 MinHeight="40"
-                Margin="20 30 0 20" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
+                Margin="20 80 0 20" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
                 
                 />
 
@@ -71,19 +71,11 @@
             MinHeight="40"
             Margin="20 30 0 20" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
                 />
-
-            <Button x:Name="cp"
-            Content="||     C R I T I C A L   P O W E R     ||"
-            Click="Open_CP" 
-            Background="#FF00B9FF" 
-            BorderBrush="White" 
-            Foreground="White" 
-            MinHeight="40"
-            Margin="20 30 0 238" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
-                />
+            
             <TextBlock 
                    
                    FontSize="30"
+                   Margin="0 270 0 0"
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"
                    Text="Z w i f t   R e a d e r"
