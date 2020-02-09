@@ -22,7 +22,7 @@ Current Data Ouput:
 
 TODOs:
   - Clean up UI
-  - Ability to log multiple days
+  - DB logging (local account)
   - User/account set up
   - CP Graph
   - Expansion into data fields I'm not familiar with (HR, Vo2, W/bal)
