@@ -1,0 +1,716 @@
+﻿<Page x:Class="Zwift_Reader_0._1._0.Detailed"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Zwift_Reader_0._1._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="1050" d:DesignWidth="1536"
+      Title="Detailed"
+      FontFamily="Microsoft YaHei UI Light"
+      TextBlock.Foreground="White">
+
+    <Border Background="White" BorderThickness="5" BorderBrush="White">
+        <Grid Background="#FF00DC14">
+            <Grid Margin="0,6,0,807">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100*"/>
+                    <RowDefinition Height="57*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="D E T A I L E D   R I D E   D A T A"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="38"
+                       FontFamily="Microsoft YaHei UI"  
+                       Grid.ColumnSpan="4" Height="48" Width="584" Margin="456,28,456,24"
+                       />
+                <TextBlock x:Name="ride_type"
+                       Text="ride_type"
+                       FontSize="26"
+                       Grid.Column="0"
+                           Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       />
+                <TextBlock x:Name="data_points"
+                       Text="XXXX_data_points"
+                       FontSize="26"
+                       Grid.Column="1"
+                           Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       />
+                <TextBlock x:Name="start_time"
+                       Text="start_time"
+                       FontSize="26"
+                       Grid.Column="2"
+                           Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       />
+                <TextBlock x:Name="ride_date"
+                       Text="ride_date"
+                       FontSize="26"
+                       Grid.Column="3"
+                           Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       />
+            </Grid>
+
+            <Grid Margin="0,208,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Background="White" BorderThickness="0 20 5 5" BorderBrush="White" Grid.Column="0" Grid.Row="0">
+                    <Grid Grid.Column="0"
+                  Grid.Row="0" Background="#FF00DC14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="4.5*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="26"
+                                   Text="A V E R A G E S"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   />
+
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" MinWidth="10"/>
+                                <ColumnDefinition Width="auto" MinWidth="237"/>
+                                <ColumnDefinition Width="auto" MinWidth="130"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto" MinWidth="241"/>
+                                <ColumnDefinition Width="auto" MinWidth="138"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Total Average Power:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="0" Height="25" Margin="0,41" Width="193"
+                                       />
+                            <TextBlock Text="Total Average Cadence:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="1" Height="24" Margin="0,41" Width="216"
+                                       />
+                            <TextBlock Text="Total Average Speed:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="2" Height="25" Margin="0,41" Width="193"
+                                       />
+
+                            <TextBlock x:Name="total_avg_power"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="0"
+                                       />
+                            <TextBlock x:Name="total_avg_cadence"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="1"
+                                       />
+                            <TextBlock x:Name="total_avg_speed"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="2"
+                                       />
+
+
+                            <TextBlock Text="Moving Average Power:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="0" Height="25" Margin="0,41" Width="216"
+                                       />
+                            <TextBlock Text="Moving Average Cadence:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="1" Height="24" Margin="0,41" Width="239"
+                                       />
+                            <TextBlock Text="Moving Average Speed:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="2" Height="25" Margin="0,41" Width="216"
+                                       />
+                            <TextBlock x:Name="moving_avg_power"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="0"
+                                       />
+                            <TextBlock x:Name="moving_avg_cadence"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="1"
+                                       />
+                            <TextBlock x:Name="moving_avg_speed"
+                                       Text="XXXX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="2"
+                                       />
+
+
+                        </Grid>
+
+                    </Grid>
+                </Border>
+
+                <Border Background="White" BorderThickness="5 20 0 5" BorderBrush="White" Grid.Column="1" Grid.Row="0">
+                    <Grid Grid.Column="0"
+                  Grid.Row="0" Background="#FF00DC14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="4.5*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="26"
+                                   Text="T I M E"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   />
+
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="101*"/>
+                                <ColumnDefinition Width="187*"/>
+                                <ColumnDefinition Width="112*"/>
+                                <ColumnDefinition Width="37*"/>
+                                <ColumnDefinition Width="108*"/>
+                                <ColumnDefinition Width="213*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Start Time:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="0" Height="24" Margin="0,28" Width="96"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="0"
+                                       x:Name="start_time_block" Height="24" Margin="0,28" Width="83"
+                                       />
+
+                            <TextBlock Text="End Time:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="0" Height="24" Margin="0,28" Width="89"
+                                       />
+
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="0"
+                                       x:Name="end_time_block" Height="24" Margin="0,28" Width="83"
+                                       />
+                            <TextBlock Text="Total Ride Time:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="1" Height="24" Margin="0,28" Width="145"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="1"
+                                       x:Name="total_ride_time"
+                                       />
+                            <TextBlock Text="Active Ride Time:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="2" Height="24" Margin="0,28" Width="155"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="2"
+                                       x:Name="active_ride_time"
+                                       />
+                            <TextBlock Text="Inactive Ride Time:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="1"
+                                       Grid.Row="3" Height="24" Margin="0,28" Width="168"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="2"
+                                       Grid.Row="3"
+                                       x:Name="inactive_ride_time"
+                                       />
+                            <TextBlock Text="% Active:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="2"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="2"
+                                       x:Name="percent_active"
+                                       />
+                            <TextBlock Text="% Inactive:"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="4"
+                                       Grid.Row="3"
+                                       />
+                            <TextBlock Text="XX:XX:XX"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="5"
+                                       Grid.Row="3"
+                                       x:Name="percent_inactive"
+                                       />
+
+
+
+
+                        </Grid>
+
+                    </Grid>
+                </Border>
+
+                <Border Background="White" BorderThickness="0 5 5 0" BorderBrush="White" Grid.Column="0" Grid.Row="1">
+                    <Grid Grid.Column="0"
+                  Grid.Row="0" Background="#FF00DC14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="4.5*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="26"
+                                   Text="A L T I T U D E   /   S L O P E"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   />
+
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Altitude Gained:"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   />
+
+                            <TextBlock Text="Altitude Dropped:"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   />
+
+                            <TextBlock Text="XXXX"
+                                       x:Name="alt_gained"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="1"
+                                   Grid.Row="0"
+                                   />
+                            <TextBlock Text="Average Gradient:"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20"
+                                       Grid.Column="0"
+                                       Grid.Row="2"
+                                       />
+                            <TextBlock Text="XXXX"
+                                       x:Name="avg_gradient"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   />
+
+                            <TextBlock Text="XXXX"
+                                       x:Name="alt_dropped"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   />
+
+                            <TextBlock Text="Highest Altitude"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="2"
+                                   Grid.Row="0"
+                                   />
+
+                            <TextBlock Text="Lowest Altitude:"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="2"
+                                   Grid.Row="1"
+                                   />
+                            <TextBlock Text="XXXX"
+                                       x:Name="high_alt"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="3"
+                                   Grid.Row="0"
+                                   />
+
+                            <TextBlock Text="XXXX"
+                                       x:Name="low_alt"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   Grid.Column="3"
+                                   Grid.Row="1"
+                                   />
+                        </Grid>
+                    </Grid>
+
+
+                </Border>
+
+                <Border Background="White" BorderThickness="5 5 0 0" BorderBrush="White" Grid.Column="1" Grid.Row="1">
+                    <Grid Grid.Column="0"
+                  Grid.Row="0" Background="#FF00DC14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="4.5*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="26"
+                                   Text="C P"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   />
+
+
+                        <Grid Grid.Row="1" Margin="10 0 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Column="0"
+                                       Grid.Row="0"
+                                       Text="SECONDS"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="MINUTES"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock Grid.Column="2"
+                                       Grid.Row="0"
+                                       Text="HOURS"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+
+                            <TextBlock x:Name="one_second"
+                                       Grid.Column="0"
+                                       Grid.Row="1"
+                                       Text="1:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="two_second"
+                                       Grid.Column="0"
+                                       Grid.Row="2"
+                                       Text="2:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="five_second"
+                                       Grid.Column="0"
+                                       Grid.Row="3"
+                                       Text="5:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="ten_second"
+                                       Grid.Column="0"
+                                       Grid.Row="4"
+                                       Text="10:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="twenty_second"
+                                       Grid.Column="0"
+                                       Grid.Row="5"
+                                       Text="20:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="thirty_second"
+                                       Grid.Column="0"
+                                       Grid.Row="6"
+                                       Text="30:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="sixty_second"
+                                       Grid.Column="0"
+                                       Grid.Row="7"
+                                       Text="60:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="one_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="1:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="two_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="2"
+                                       Text="2:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="five_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="3"
+                                       Text="5:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="ten_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="4"
+                                       Text="10:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="twenty_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="5"
+                                       Text="20:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="thirty_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="6"
+                                       Text="30:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="sixty_minute"
+                                       Grid.Column="1"
+                                       Grid.Row="7"
+                                       Text="60:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="one_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="1"
+                                       Text="1:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="one_five_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="2"
+                                       Text="1.5:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="two_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="3"
+                                       Text="2:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="three_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="4"
+                                       Text="3:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="four_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="5"
+                                       Text="4:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                            <TextBlock x:Name="five_hour"
+                                       Grid.Column="2"
+                                       Grid.Row="6"
+                                       Text="5:"
+                                       FontSize="20"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       />
+                        </Grid>
+
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+
+</Page>

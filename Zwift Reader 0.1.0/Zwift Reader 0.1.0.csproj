@@ -58,18 +58,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Altitude.cs" />
+    <Compile Include="cs\Altitude.cs" />
     <Compile Include="Detailed.xaml.cs">
       <DependentUpon>Detailed.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Distance.cs" />
-    <Compile Include="Gradient.cs" />
-    <Compile Include="Helpers.cs" />
+    <Compile Include="cs\Distance.cs" />
+    <Compile Include="cs\Gradient.cs" />
+    <Compile Include="cs\Helpers.cs" />
     <Compile Include="Overview.xaml.cs">
       <DependentUpon>Overview.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Speed.cs" />
-    <Compile Include="Time.cs" />
+    <Compile Include="cs\Speed.cs" />
+    <Compile Include="cs\Time.cs" />
     <Page Include="Detailed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,9 +82,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Cadence.cs" />
-    <Compile Include="Decoders.cs" />
-    <Compile Include="Master.cs" />
+    <Compile Include="cs\Cadence.cs" />
+    <Compile Include="cs\Decoders.cs" />
+    <Compile Include="cs\Master.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -95,7 +95,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Power.cs" />
+    <Compile Include="cs\Power.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

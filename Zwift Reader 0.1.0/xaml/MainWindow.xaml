@@ -1,0 +1,107 @@
+﻿<Window x:Class="Zwift_Reader_0._1._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zwift_Reader_0._1._0"
+        mc:Ignorable="d"
+        FontSize="18"
+        FontFamily="Microsoft YaHei UI"
+        Title="MainWindow" Height="1050" Width="1920" WindowState="Maximized">
+
+    
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="384"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1"
+                   Grid.Row="1"
+                   Text="Open a .fit File to Get Started"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" 
+                   FontFamily="Microsoft YaHei UI Light"
+                   Margin="0 0 0 220"/>
+
+        <StackPanel Grid.Column="0" Grid.RowSpan="2"
+                    Orientation="Vertical">
+
+            <Border 
+                    Background="White" 
+                    BorderThickness="20 0 0 0" 
+                    BorderBrush="White"
+                    >
+                <Button x:Name="open_file"
+                Content="O P E N&#xa;F I L E"
+                Click="Open_File" 
+                Background="Black" 
+                BorderBrush="White" 
+                Foreground="White" 
+                Height="217" 
+                Margin="2,0,-2,210"
+                FontSize="47" 
+                FontWeight="Bold"
+                />
+            </Border>
+
+            <Button x:Name="overview"
+                Content="||             O V E R V I E W              ||"
+                Click="Open_Overview" 
+                Background="#FFFF6800" 
+                BorderBrush="White" 
+                Foreground="White"
+                MinHeight="40"
+                Margin="20 80 0 20" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
+                
+                />
+
+            <Button x:Name="detailed"
+            Content="||              D E T A I L E D               ||"
+            Click="Open_Detailed" 
+            Background="#FF00DC14" 
+            BorderBrush="White" 
+            Foreground="White" 
+            MinHeight="40"
+            Margin="20 30 0 20" FontFamily="Microsoft YaHei UI" FontWeight="ExtraBold"
+                />
+            
+            <TextBlock 
+                   
+                   FontSize="30"
+                   Margin="0 270 0 0"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Text="Z w i f t   R e a d e r"
+                   />
+            <TextBlock 
+                   x:Name="run_time"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Text=""
+                   FontFamily="Microsoft YaHei UI Light"
+                   FontSize="16"
+                   />
+
+        </StackPanel>
+
+        <Frame Grid.Column="1" 
+               x:Name="Frame" Grid.RowSpan="2"
+               NavigationUIVisibility="Hidden">
+
+            
+        </Frame>
+
+
+    </Grid>
+
+
+
+
+</Window>
