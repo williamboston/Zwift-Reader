@@ -21,12 +21,10 @@ Current Data Ouput:
   - Slope/Gradient Metrics
 
 TODOs:
-  - Clean up UI
   - Ability to log multiple days
   - User/account set up
   - CP Graph
   - Expansion into data fields I'm not familiar with (HR, Vo2, W/bal)
 
 Notes: 
-  - Currently only designed for .fit files recorded in Zwift, but it will take Garmin/Wahoo files and output some data, but it wasn't ever   intended to do that so results may vary.
   - Development currently on hiatus.
